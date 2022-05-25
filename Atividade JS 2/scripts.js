@@ -2,11 +2,11 @@ function atv1(){
         var Num1 = Number(prompt("Envie o primeiro número: "));
         var Num2 = Number(prompt("Envie o segundo número: "));
         if(Num1 > Num2){
-            alert("Aparentemente, " +Num1+ " é maior que " + Num2+"!");
+            alert("Aparentemente, " +Num1+ " vem depois de " + Num2+"!");
 
         }
         else{
-            alert("Aparentemente, " +Num2+ " é maior que " + Num1+"!");
+            alert("Aparentemente, " +Num2+ " vem depois de " + Num1+"!");
         }
 }
 
@@ -25,21 +25,21 @@ function atv2(){
 }
 
 function atv3(){
-    let menor = 3782139;
+    let menor = 37821397675;
     let vet = [];
   
    
     for(i=0;i<3;i++){
-        vet[i] = Number(prompt(" Digite o  "+ i + "numero: "));
+        vet[i] = Number(prompt(" Digite o  "+ (i+1)+"°"+ "numero: "));
 
     }
     for(i=0;i<3;i++){
-        if(vet[i]>maior){
-
+        if(vet[i]<menor){
+            menor = vet[i];
         }
 
     }
-
+    alert("O menor número digitado foi: "+ menor);
 }
 function atv4(){
     var Num = Number(prompt("Digite o número desejado: "));
@@ -112,6 +112,8 @@ function atv7(){
         case 7: 
             alert("Este dia da semana se refere a sábado"+"("+ NUm + ")");
             break;
+        default:
+            alert("Digite um número válido!");
     }
 
 }
